@@ -1,0 +1,24 @@
+.partner-logo_title {
+  font-size: 14px;
+  color:var(--main-color);
+  text-align: center;
+}
+.logo-box {
+  display: grid;
+  grid-template-columns: 1fr ;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+    &_img {
+      display: block;
+      width: 100%;
+      &-ml {
+        display: none;
+        @media screen and (min-width: 768px) {
+          display:block;
+          width: 100%;
+        }
+      }
+  }
+}

@@ -1,0 +1,81 @@
+.theme-home {
+  background-image: url("../img/Symbol.png"), var(--supersoft-background);
+  background-repeat: no-repeat;
+  background-size: 523px 600px, 100% 100%;
+  background-position-x: center;
+  border-radius: 0 0 12px 12px;
+}
+@media screen and (min-width: 768px) {
+  .theme-home {
+    background-size: 893px 1024px, 100% 100%;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1440px) {
+  .theme-home {
+    background-size: 697px 799px, 100% 100%;
+  }
+}
+.theme-home a, .theme-home span, .theme-home h3, .theme-home p {
+  color: #FFFFFF;
+}
+.theme-home h1 {
+  background: #FFFFFF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-home span.span {
+  background: #FFFFFF;
+}
+.theme-home .header__top {
+  background: rgba(245, 245, 250, 0.2);
+}
+@media screen and (min-width: 768px) {
+  .theme-home .header__top {
+    background: transparent;
+  }
+}
+.theme-home .header__refer__facebook .facebook {
+  fill: var(--accent-color);
+  stroke: #FFFFFF;
+}
+.theme-home .logo__label .legal {
+  fill: #FFFFFF;
+}
+.theme-home #nav__toggle:checked ~ .nav__toggle span.span {
+  background: var(--accent-color);
+  color: var(--accent-color);
+}
+.theme-home .maintenance {
+  background: var(--separator-color);
+  color: var(--regular-color);
+}
+.theme-home .maintenance:active {
+  color: var(--accent-color);
+}
+.theme-home .link:hover {
+  color: #FFFFFF;
+}
+
+.theme-home:after {
+  content: "";
+  display: block;
+  background: var(--shadow-color);
+  background-position-y: bottom;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  height: 10px;
+  width: calc(100% - 40px);
+  border-radius: 0 0 12px 12px;
+}
+
+.shadow {
+  display: block;
+  background: var(--shadow-light-color);
+  width: calc(100% - 80px);
+  margin: 10px auto 0 auto;
+  height: 10px;
+  border-radius: 0 0 12px 12px;
+}
+
+/*# sourceMappingURL=theme-home.css.map */

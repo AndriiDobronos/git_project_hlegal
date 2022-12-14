@@ -1,0 +1,34 @@
+.link {
+  color: var(--text-color);
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: var(--regular-color);
+}
+
+.link:active {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: var(--accent-color);
+}
+
+li a.refer {
+  color: var(--text-color);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.refer:hover {
+  color: var(--regular-color);
+}
+
+.refer:active {
+  color: var(--accent-color);
+}
+
+/*# sourceMappingURL=link.css.map */

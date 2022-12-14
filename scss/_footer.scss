@@ -1,0 +1,94 @@
+a p:hover,a h5:hover {
+  color: var(--accent-color );
+}
+.footer {
+  background: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+    flex-wrap: wrap;
+    height: 76px;
+  }
+  &__refer__map {
+      text-decoration: none;
+    @media screen and (min-width: 768px) {
+    }
+    &:hover {
+      color: var(--accent-color );
+    }
+    &_address {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &__refer__area {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 0;
+    text-decoration: none;
+    @media screen and (min-width: 768px) {
+      margin: 0;
+    }
+    &:hover {
+      color: var(--accent-color );
+    }
+  }
+  &__refer__facebook {
+    fill:var(--regular-color);
+    margin-bottom:0;
+    &:hover {
+      fill:var(--accent-color);
+    }
+  }
+  &__refer__phone {
+     margin-bottom: 10px;
+  }
+  &__refer__mail {
+     text-decoration: none;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      margin: 0;
+    }
+  }
+  &__bottom__text {
+    padding-bottom: 0;
+  }
+  &__upper-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+      width: 282px;
+      margin-left: -60px;
+      padding-left: 0;
+    }
+  }
+  &__midl-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+      width: 386px;
+    }
+  }
+  &__bottom-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px){
+      margin-top: -20px;
+    }
+  }
+}

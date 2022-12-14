@@ -1,0 +1,119 @@
+button {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.publication__button-switch {
+  display: flex;
+  justify-content: center;
+  height: 42px;
+  width: 100%;
+  position: relative;
+}
+
+input.publication__input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility:visible;
+}
+label.publication__label  {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 233px;
+  height: 42px;
+  background: var(--separator-color );
+  display: block;
+  border-radius: 12px;
+  position: relative;
+}
+input.publication__input:before {
+  content: 'articles';
+  position: absolute;
+  top: 3px;
+  left: calc(50vw - 40px);
+  width: 105px;
+  height: 38px;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: var(--main-color);
+  z-index: 100;
+}
+label.publication__label:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 105px;
+  height: 38px;
+  background: #fff;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+input.publication__input:checked + label.publication__label  {
+  background: var(--separator-color );
+}
+input.publication__input:checked + label.publication__label:after {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+label.publication__label:active:after {
+  width: 130px;
+  border: 1px solid var(--main-color);
+}
+p.publication_switch-text {
+  line-height: 38px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--main-color );
+}
+.box__switch-text {
+  position: absolute;
+  z-index: 99;
+  top: calc(-50% + 3px);
+  left:calc(50vw - 158px) ;
+}
+.box__toggle {
+  display: flex;
+  width: 100%;
+  height: 42px;
+  justify-content: center;
+}
+.container__toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 233px;
+  height:42px ;
+  padding-left: 2px;
+  background: var(--separator-color);
+  border-radius: 12px;
+}
+.button-news {
+  display: block;
+  width: 105px;
+  height: 38px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  &:hover {
+    background: var(--background-color);
+  }
+}
+.button-news:active {
+  background: var(--separator-color);
+  a.button-article {
+    background: #FFFFFF;
+    opacity: 1;
+  }
+}
+.button-article{
+  display: block;
+  width: 105px;
+  height: 38px;
+  background: #FFFFFF;
+  opacity: 1;
+  border-radius: 12px;
+  &:hover {
+    background: var(--background-color);
+  }
+}

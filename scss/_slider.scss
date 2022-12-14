@@ -1,0 +1,40 @@
+.slider {
+  position: relative;
+
+  &__checker {
+    @extend %visually-hidden
+  }
+
+  &__item {
+    display: none;
+  }
+
+  &__dots {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    top: calc(100% + 32px);
+    gap: 16px;
+    label {
+      display: flex;
+      color: transparent;
+      background:var(--regular-color);
+      opacity: 0.2;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+  }
+
+  @for $i from 1 through 3 {
+    &__checker[value="#{$i}"]:checked ~.slider__list .slider__item:nth-child(#{$i}) {
+      display: block;
+    }
+    &__checker[value="#{$i}"]:checked ~.slider__dots label:nth-child(#{$i}) {
+     opacity: 1;
+    }
+  }
+}
