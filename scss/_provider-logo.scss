@@ -16,6 +16,25 @@
         height: 799px;
       }
     }
+    &__link{
+      &:hover {
+        svg g circle,svg g path {
+          stroke: var(--accent-color);
+        }
+      }
+    }
+    &_img {
+      display: block;
+      position: relative;
+      bottom: -440px;
+      margin: auto;
+      & g:hover {
+        stroke: var(--accent-color);
+      }
+      @media screen and (min-width: 768px) {
+        bottom: -560px;
+      }
+    }
   }
 }
 .provider-logo__title {
@@ -32,5 +51,9 @@
     }
   }
 }
-
-
+g path{
+  stroke: #FFFFFF ;
+}
+g circle {
+  stroke: #FFFFFF ;
+}

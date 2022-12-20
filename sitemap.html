@@ -13,33 +13,65 @@
 </head>
 <style>
     .sitemap {
-        padding: 15px;
+        padding: 15px 15px 15px 30px;
         margin: 15px;
-        height: 70px;
+        height: 250px;
         border: 1px solid grey;
     }
+      @media screen and (min-width: 768px) {
+          .sitemap{
+              padding-left: 90px;
+          }
+      }
     .block {
-        width: 100%;
-        height: 50px;
+        width: calc(100% - 45px);
+        height: 250px;
         padding: 15px 15px 15px 30px;
     }
 </style>
 <body>
-    <div class="sitemap">
-        <a href="#" class="link">link</a>
-        <div class="box__toggle">
-            <div class="container__toggle">
-                <a href="#" class="button-news">
-                    <p class="publication_switch-text">news</p>
-                </a>
-                <a href="#" class="button-article">
-                    <p class="publication_switch-text">article</p>
-                </a>
-            </div>
-        </div>
-    </div>
     <div class="theme-home block">
         <a href="#" class="link">link</a>
     </div>
+    <div class="shadow">
+    </div>
+
+    <div class="sitemap">
+        <a href="#" class="link">link</a>
+        <div class="publication__button-switch">
+            <div class="box__switch-text">
+                <p class="publication_switch-text">
+                    news
+                </p>
+            </div>
+            <input class="publication__input"  type="checkbox" id="switch" />
+            <label class="publication__label" for="switch">
+            </label>
+        </div>
+
+        <div class="box__toggle">
+            <div class="container__toggle">
+                <p class="publication_switch-text">
+                <a href="#" class="button-news">
+                    news
+                </a>
+                </p>
+                <p class="publication_switch-text">
+                <a href="#" class="button-article">
+                    article
+                </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="publication__button-block">
+            <button class="button"  type ="button" href="#">
+                <h4>
+                    More publications
+                </h4>
+            </button>
+        </div>
+    </div>
+
 </body>
 </html>

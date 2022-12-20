@@ -3,21 +3,28 @@
   padding-top: 0;
   padding-left: 30px;
   margin-bottom: 30px;
+  margin-top: -90px;
+  display: flex;
+  flex-direction: column;
   @media screen and (min-width: 1440px) {
     display: flex;
     flex-direction: row;
     height: 303px;
-    padding-left: 0;
+    padding-left: 150px;
+    padding-right: 180px;
     margin-bottom: 57px;
+    margin-top: 20px;
+
   }
   &__titles {
     padding: 0;
     margin-top:0;
     border-bottom: 4px solid rgba(255,255,255,0.3);
     height: 80px;
-    width: calc(100% - 120px);
+    width: calc(100% - 30px);
     @media screen and (min-width: 768px) {
       padding-left: 30px;
+      width: calc(100% - 100px);
       @media screen and (min-width: 1440px) {
         height: 275px;
         margin-right: 0;
@@ -26,34 +33,38 @@
         border-bottom: none;
         border-right: 4px solid rgba(255,255,255,0.3);
       }
+      &__text {
+        font-weight: 400;
+      }
     }
   }
   &__nav {
-    width: 990px;
+    overflow-x: hidden;
     display: flex;
     flex-direction: row;
     gap: 30px;
     padding: 0;
     margin: 0 auto;
     @media screen and (min-width: 768px) {
-      width: 1900px;
+      width: 100%;
       @media screen and (min-width: 1440px) {
+        flex-direction: column;
         max-width: 390px;
         margin-right: 0;
         margin-left: auto;
       }
     }
     &__list {
-      width: 990px;
       padding: 0;
-      margin: 0 auto;
+      margin-left: 0;
       display: flex;
       flex-direction: row;
       list-style: none;
       gap: 30px;
-      overflow-x: scroll;
+      overflow-x: hidden;    /******************/
+       width: 100%;
       @media screen and (min-width: 768px) {
-        width: 1900px;
+        width: 100%;
         @media screen and (min-width: 1440px) {
           max-width: 390px;
           height: 275px;
@@ -74,10 +85,11 @@
     }
       &_link {
       text-decoration: none;
-       & h2 {
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 700;
          @media screen and (min-width: 768px){
            font-size: 38px;
-         }
        }
     }
   }
@@ -101,4 +113,9 @@
 .consistent_title {
   margin-top: 0;
   margin-bottom: 0;
+}
+li a[tabindex="0"] {
+  background: var(--red-text-background);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

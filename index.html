@@ -12,7 +12,7 @@
     <title>hlegal</title>
 </head>
 <body>
-<main class="theme-home">
+<main class="theme-home background-home">
     <h1 class="provider-logo__title">
         you legal solutions provider
     </h1>
@@ -71,13 +71,9 @@
                 </svg>
             </a>
             <img class="logo__slash"  src="img/Slash.svg" alt="Slash">
-            <span class ="header__about-us">about us</span>
+            <span class ="header__about-us">homepage</span>
         </div>
-        <svg  class="header__burger-icon"  width="32" height="33" viewBox="0 0 32 33" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7 10.5H25" stroke="#FFFFFF" stroke-width="2"/>
-            <path d="M7 16.5H25" stroke="#FFFFFF" stroke-width="2"/>
-            <path d="M7 22.5H25" stroke="#FFFFFF" stroke-width="2"/>
-        </svg>
+        <div class="header__burger-icon"></div>
         <nav class="burger-icon__nav">
             <input type ="checkbox" id="nav__toggle" class="nav__checker">
             <label class ="nav__toggle" for="nav__toggle">
@@ -87,11 +83,10 @@
             </label>
             <ul class="burger-icon__nav_list">
                 <li><a href="#" class="maintenance">about us</a></li>
-                <li><a href="#" class="maintenance">послуги</a></li>
+                <li><a href="services.html" class="maintenance">послуги</a></li>
                 <li><a href="#" class="maintenance">команда</a></li>
-                <li><a href="#" class="maintenance">публікації</a></li>
+                <li><a href="publication.html" class="maintenance">публікації</a></li>
                 <li><a href="#" class="maintenance">контакти</a></li>
-
             </ul>
         </nav>
     </div>
@@ -101,13 +96,13 @@
                 <li><a href="#" class="header__dash__nav_link">
                     about us
                 </a></li>
-                <li><a href="#" class="header__dash__nav_link">
+                <li><a href="services.html" class="header__dash__nav_link">
                     services
                 </a></li>
                 <li><a href="#" class="header__dash__nav_link">
                     team
                 </a></li>
-                <li><a href="#" class="header__dash__nav_link">
+                <li><a href="publication.html" class="header__dash__nav_link">
                     publications
                 </a></li>
                 <li><a href="#" class="header__dash__nav_link">
@@ -120,24 +115,37 @@
 
 <section class ="provider-logo">
     <div class="provider-logo_box">
+        <a class="provider-logo_box__link"  href="#">
+            <svg class="provider-logo_box_img" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_22728_11339)">
+                    <circle opacity="0.5" cx="21" cy="21" r="20" stroke="none" stroke-width="2"/>
+                    <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_22728_11339">
+                        <rect width="42" height="42" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </a>
     </div>
 </section>
 
 <section class="experience">
     <div class="experience__titles">
         <nav class="experience__nav">
-            <ul class="experience__nav__list">
-                <li><a href="#" class="refer experience__nav_link">
-                    <h2 class="consistent_title">Consistent</h2>
+            <ul class="experience__nav__list" role="toolbar">
+                <li><a tabindex="0" href="#" class="refer experience__nav_link">
+                    Consistent
                 </a></li>
-                <li><a href="#" class="refer experience__nav_link">
-                    <h2 class="consistent_title">Customer oriented</h2>
+                <li><a tabindex="-1"  href="#" class="refer experience__nav_link">
+                    <nobr>Customer oriented</nobr>
                 </a></li>
-                <li><a href="#" class="refer experience__nav_link">
-                    <h2 class="consistent_title">Innovative</h2>
+                <li><a tabindex="-1"  href="#" class="refer experience__nav_link">
+                    Innovative
                 </a></li>
-                <li><a href="#" class="refer experience__nav_link">
-                    <h2 class="consistent_title">Business oriented</h2>
+                <li><a tabindex="-1"  href="#" class="refer experience__nav_link">
+                    <nobr>Business oriented</nobr>
                 </a></li>
             </ul>
         </nav>
@@ -155,9 +163,9 @@
 
 <section class="services content">
     <div class="services__refer">
-        <p class="upper-letter">
+        <h3 class="caps upper-letter">
             Services >
-        </p>
+        </h3>
     </div>
     <h1 id="services__title">
         What can we do better than others?
@@ -225,80 +233,74 @@
 </div>
 
 <section class="offer content">
-    <div class="offer__block">
+    <div class="offer__slider slider">
+            <input type="radio" checked name="slider__checker" class="slider__checker" value="1" id="slider__checker-1">
+            <input type="radio" name="slider__checker" class="slider__checker" value="2" id="slider__checker-2">
+            <input type="radio" name="slider__checker" class="slider__checker" value="3" id="slider__checker-3">
+        <div class="slider__list">
 
-        <div class="offer__img">
-            <div class="photo slider">
-                    <input type="radio" checked name="slider__checker" class="slider__checker" value="1" id="slider__checker-1">
-                    <input type="radio" name="slider__checker" class="slider__checker" value="2" id="slider__checker-2">
-                    <input type="radio" name="slider__checker" class="slider__checker" value="3" id="slider__checker-3">
-                <div class="slider__list">
-                    <div class="slider__item">
-
-                        <img  class="offer__block_img-ml" src="img/member1-ml.png" alt="member-1">
-                        <img class="offer__block_img"  src="img/member1-sm.png" alt="We have something to tell">
-
-                        <div class="offer__block__about">
-                            <p class="upper-letter">
-                                команда>
-                            </p>
-                            <h2 class="offer__block_title">
-                                Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
-                            </h2>
-                            <h4 class="text-color">
-                                Олександр Олександровський
-                            </h4>
-                            <p class="text-color">
-                                Керуючий партнер
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="slider__item">
-                    <img class="offer__block_img"  src="img/member2-sm.png" alt="member-2">
-                        <img class="offer__block_img-ml"  src="img/member2-ml.png" alt="member-2">
-                        <div class="offer__block__about">
-                            <p class="upper-letter">
-                                команда>
-                            </p>
-                            <h2 class="offer__block_title">
-                                Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
-                            </h2>
-                            <h4 class="text-color">
-                                Олена Олександровська
-                            </h4>
-                            <p class="text-color">
-                                Менеджер партнер
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="slider__item">
-                    <img class="offer__block_img" src="img/member3-sm.png" alt="member-3">
-                        <img class="offer__block_img-ml" src="img/member3-ml.png" alt="member-3">
-                        <div class="offer__block__about">
-                            <p class="upper-letter">
-                                команда>
-                            </p>
-                            <h2 class="offer__block_title">
-                                Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
-                            </h2>
-                            <h4 class="text-color">
-                                Марина Олександровська
-                            </h4>
-                            <p class="text-color">
-                                Фронтенд партнер
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="slider__dots">
-                    <label for="slider__checker-1">1</label>
-                    <label for="slider__checker-2">2</label>
-                    <label for="slider__checker-3">3</label>
+            <div class="slider__item">
+                <img  class="offer__block_img-ml" src="img/member1-ml.png" alt="member-1">
+                <img class="offer__block_img"  src="img/member1-sm.png" alt="We have something to tell">
+                <div class="offer__block__about">
+                    <h3 class="caps upper-letter">
+                        Kоманда>
+                    </h3>
+                    <h2 class="offer__block_title">
+                        Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+                    </h2>
+                    <h4 class="text-color">
+                        Олександр Олександровський
+                    </h4>
+                    <p class="text-color">
+                        Керуючий партнер
+                    </p>
                 </div>
             </div>
+
+            <div class="slider__item">
+            <img class="offer__block_img"  src="img/member2-sm.png" alt="member-2">
+                <img class="offer__block_img-ml"  src="img/member2-ml.png" alt="member-2">
+                <div class="offer__block__about">
+                    <p class="upper-letter">
+                        команда>
+                    </p>
+                    <h2 class="offer__block_title">
+                        Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+                    </h2>
+                    <h4 class="text-color">
+                        Олена Олександровська
+                    </h4>
+                    <p class="text-color">
+                        Менеджер партнер
+                    </p>
+                </div>
+            </div>
+
+            <div class="slider__item">
+            <img class="offer__block_img" src="img/member3-sm.png" alt="member-3">
+                <img class="offer__block_img-ml" src="img/member3-ml.png" alt="member-3">
+                <div class="offer__block__about">
+                    <p class="upper-letter">
+                        команда>
+                    </p>
+                    <h2 class="offer__block_title">
+                        Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+                    </h2>
+                    <h4 class="text-color">
+                        Марина Олександровська
+                    </h4>
+                    <p class="text-color">
+                        Фронтенд партнер
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="slider__dots">
+            <label for="slider__checker-1">1</label>
+            <label for="slider__checker-2">2</label>
+            <label for="slider__checker-3">3</label>
         </div>
     </div>
 </section>
@@ -324,11 +326,11 @@
 </section>
 
 <section class="publication content">
-    <p class="upper-letter">
+    <h3 class="caps upper-letter">
         Publications >
-    </p>
+    </h3>
     <h2 class="publication__title offer__block_title">
-        We have something to tell
+        We have <br>something to tell
     </h2>
     <div class="publication__area">
     <div class="publication__container">
@@ -399,36 +401,38 @@
 </section>
 
 <footer class="footer content">
-    <div class="footer__upper-line">
-        <a class="footer__refer__map" href="https://goo.gl/maps/OhAUhovExqcBfe7j8" target="_blank" rel="nofollow">
-        <p class="footer__refer__map_address">
-            Kyiv,Mechnikova str,14/1
-        </p>
-        </a>
-        <span class="header__refer__circle"></span>
-        <a href="#" class="footer__refer__area">
-            <h5 class="publication__description_title">
-                On map
+    <div class="footer__set-line">
+        <div class="footer__upper-line">
+            <p class="footer__refer__map_address">
+                <a class="footer__refer__map" href="https://goo.gl/maps/OhAUhovExqcBfe7j8" target="_blank" rel="nofollow">
+                    Kyiv,Mechnikova str,14/1
+                </a>
+            </p>
+            <span class="header__refer__circle"></span>
+            <h5 class="footer__upper-line_title publication__description_title">
+                <a href="#" class="footer__refer__area">
+                  On map
+                </a>
             </h5>
-        </a>
-    </div>
-    <div class="footer__midl-line">
-        <a class="footer__refer__map" href="https://goo.gl/maps/OhAUhovExqcBfe7j8" target="_blank" rel="nofollow"></a>
-        <a class="footer__refer__facebook" href="tel:380991234567">
-            <svg class="facebook"  width="24" height="25" viewBox="0 0 24 25"  xmlns="http://www.w3.org/2000/svg">
-                <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" />
-            </svg>
-        </a>
-        <span class="header__refer__circle"></span>
-        <a class="header__refer__phone" href="tel:0800211927">
-            0800 211 927
-        </a>
-        <span class="header__refer__circle"></span>
-        <a href="#" class="footer__refer__mail">
-            <h5 class="publication__description_title">
-               contact@forstudy.space
-            </h5>
-        </a>
+        </div>
+        <div class="footer__midl-line">
+            <a class="footer__refer__map" href="https://goo.gl/maps/OhAUhovExqcBfe7j8" target="_blank" rel="nofollow"></a>
+            <a class="footer__refer__facebook" href="tel:380991234567">
+                <svg class="facebook"  width="38" height="38" viewBox="0 0 24 25"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" />
+                </svg>
+            </a>
+            <span class="header__refer__circle"></span>
+            <a class="header__refer__phone" href="tel:0800211927">
+                0800 211 927
+            </a>
+            <span class="header__refer__circle"></span>
+            <h4 class="footer__midl-line_title">
+                <a href="#" class="footer__refer__mail">
+                   contact@forstudy.space
+                </a>
+            </h4>
+        </div>
     </div>
     <div class="footer__bottom-line">
         <p class="footer__bottom-text">

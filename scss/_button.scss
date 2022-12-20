@@ -2,14 +2,35 @@ button {
   cursor: pointer;
   transition: 0.3s;
 }
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background:var(--regular-color);
+  box-shadow: 0 0 20px rgba(36,163,255,0.5) ;
+  text-decoration: none;
+  border-radius: 12px;
+  border-color: transparent ;
+}
+.button:hover {
+  background: #0085FF;
+  box-shadow: 0 0 20px rgba(36,163,255,0.5) ;
+}
+.button:active {
+  background: #006CCF;
+  box-shadow: 0 0 20px rgba(36,163,255,0.5) ;
+}
 .publication__button-switch {
   display: flex;
   justify-content: center;
   height: 42px;
   width: 100%;
   position: relative;
+  margin-bottom: 30px;
 }
-
 input.publication__input[type=checkbox]{
   height: 0;
   width: 0;
@@ -24,20 +45,25 @@ label.publication__label  {
   display: block;
   border-radius: 12px;
   position: relative;
+  z-index: 1;
 }
 input.publication__input:before {
   content: 'articles';
   position: absolute;
   top: 3px;
-  left: calc(50vw - 40px);
+  left: calc(50vw - 10px);
   width: 105px;
   height: 38px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   color: var(--main-color);
-  z-index: 100;
+  z-index: 3;
+  @media screen and (min-width: 768px) {
+    left: calc(50vw - 40px);
+  }
 }
+
 label.publication__label:after {
   content: '';
   position: absolute;
@@ -48,6 +74,12 @@ label.publication__label:after {
   background: #fff;
   border-radius: 12px;
   transition: 0.3s;
+}
+label.publication__label:hover:after {
+  background: var(--background-color);
+  width: 105px;
+  height: 38px;
+  border-radius: 12px;
 }
 input.publication__input:checked + label.publication__label  {
   background: var(--separator-color );
@@ -68,9 +100,12 @@ p.publication_switch-text {
 }
 .box__switch-text {
   position: absolute;
-  z-index: 99;
+  z-index: 2;
   top: calc(-50% + 3px);
-  left:calc(50vw - 158px) ;
+  left:calc(50vw - 128px) ;
+  @media screen and (min-width: 768px) {
+    left: calc(50vw - 158px);
+  }
 }
 .box__toggle {
   display: flex;
@@ -93,10 +128,14 @@ p.publication_switch-text {
   display: block;
   width: 105px;
   height: 38px;
-  background: #FFFFFF;
+  background:#FFFFFF;
   border-radius: 12px;
+  text-decoration: none;
+  text-align: center ;
+  color: var(--main-color);
   &:hover {
     background: var(--background-color);
+    color: var(--main-color);
   }
 }
 .button-news:active {
@@ -110,10 +149,14 @@ p.publication_switch-text {
   display: block;
   width: 105px;
   height: 38px;
-  background: #FFFFFF;
+  background: var(--separator-color);
   opacity: 1;
   border-radius: 12px;
+  text-decoration: none ;
+  color: var(--main-color);
+  text-align: center;
   &:hover {
     background: var(--background-color);
+    color: var(--main-color);
   }
 }

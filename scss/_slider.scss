@@ -17,10 +17,11 @@
     left: 0;
     top: calc(100% + 32px);
     gap: 16px;
+
     label {
       display: flex;
       color: transparent;
-      background:var(--regular-color);
+      background: var(--regular-color);
       opacity: 0.2;
       border-radius: 50%;
       width: 16px;
@@ -30,11 +31,14 @@
   }
 
   @for $i from 1 through 3 {
-    &__checker[value="#{$i}"]:checked ~.slider__list .slider__item:nth-child(#{$i}) {
+    &__checker[value="#{$i}"]:checked ~ .slider__list .slider__item:nth-child(#{$i}) {
       display: block;
     }
-    &__checker[value="#{$i}"]:checked ~.slider__dots label:nth-child(#{$i}) {
-     opacity: 1;
+
+      &__checker[value="#{$i}"]:checked ~ .slider__dots label:nth-child(#{$i}) {
+        opacity: 1;
+      }
     }
-  }
 }
+
+
